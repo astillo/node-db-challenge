@@ -1,23 +1,23 @@
 const express = require('express');
 const router = express.Router();
 
-const Project = require('./projectsModel');
+const Resources = require('./resourcesModel');
 
 router.get('/', async (req, res) => {
     try {
-        const project = await Project.getProjects();
-        res.status(201).json({ project });
+        const resources = await Resources.getResources();
+        res.status(201).json({ resources });
     } catch (err) {
         res.status(500).json({ message: `${err}` });
     }
 });
 
 router.post('/', async (req, res) => {
-    const projectData = req.body;
+    const resourceData = req.body;
 
     try {
-        const project = await Project.addProject(projectData);
-        res.status(201).json(project);
+        const resource = await Resources.addResources(resourceData);
+        res.status(201).json(resource);
     } catch (err) {
         res.status(500).json({ message: `${err}` });
     }

@@ -1,0 +1,29 @@
+{
+  "name": "db-challenge",
+  "version": "1.0.0",
+  "description": "Hello there if you are reading, youre wonderful",
+  "main": "index.js",
+  "dependencies": {
+    "dotenv": "^8.1.0",
+    "express": "^4.17.1",
+    "knex": "^0.19.4",
+    "nodemon": "^1.19.2",
+    "sqlite3": "^4.1.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "test",
+    "start": "node server.js",
+    "server": "nodemon index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/astillo/node-db-challenge.git"
+  },
+  "author": "Alexander Stillo",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/astillo/node-db-challenge/issues"
+  },
+  "homepage": "https://github.com/astillo/node-db-challenge#readme"
+}
